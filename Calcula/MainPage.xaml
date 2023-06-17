@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calcula.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="CALCULADORA" HorizontalOptions="Center" FontSize="Large"/>
+        <Entry Placeholder="Ingrese el primer numero: " x:Name="txtN1"/>
+        <Entry Placeholder="Ingrese el segundo numero: " x:Name="txtN2"/>
+        <Label Text="Seleccione Operacion" FontSize="Medium"/>
+        <Picker x:Name="pkOper" SelectedIndexChanged="pkOper_SelectedIndexChanged"/>
+        <Label Text="-------" HorizontalOptions="Center" FontSize="Medium" x:Name="lblRes"/>
+
+    </StackLayout>
+
+</ContentPage>
